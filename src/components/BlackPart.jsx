@@ -4,7 +4,7 @@ import PhoneMoving from "./PhoneMoving"
 
 const BlackPart = () => {
   return (
-    <div className="bg-black h-[1280px] text-white">
+    <div className="bg-black h-[800px] text-white">
       <div className="flex justify-between items-center">
         <div className="text-4xl md:text-7xl text-white p-10">
           &#123;SMART&#125; <br /> <div className="p-4">DEVELOPMENT</div>

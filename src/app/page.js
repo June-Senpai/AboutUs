@@ -2,11 +2,12 @@ import CircleThingy from "@/components/CircleThingy"
 import Companies from "@/components/Companies"
 import Button from "@/components/button"
 import BlackPart from "../components/BlackPart"
+import ScrollPhone from "@/components/ScrollPhone"
 
 export default function Home() {
   return (
     <>
-      <div className="overflow-hidden">
+      <div className="overflow-clip">
         <div className="mt-2 ml-10 mr-12">
           <h3 className="text-[#999] font-medium md:text-xl  text-base leading-relaxed font-sans">
             02 — About Us
@@ -26,6 +27,7 @@ export default function Home() {
         </div>
         <Companies />
         <BlackPart />
+        <ScrollPhone />
       </div>
     </>
   )

@@ -35,7 +35,7 @@ const CircleThingy = () => {
           </h1>
           <Cards />
         </div>
-        <div className="flex justify-end items-end w-1/2">
+        <div className="flex justify-end items-end w-1/2 scale-75">
           <div
             className="w-178 h-178 min-w-178 bg-gray-100 rounded-full mr-2 relative md:hidden sm:hidden lg:block"
             onMouseLeave={() => setText(INITIAL_TEXT)}
