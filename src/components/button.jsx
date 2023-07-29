@@ -9,12 +9,16 @@ const Button = () => {
             <span className="text-white transform -translate-y-full group-hover:transform group-hover:-translate-y-1 duration-300 ease-in-out">
               Become a Client
             </span>
-            <span className="text-black transform -translate-y-8 group-hover:transform group-hover:translate-y-full duration-300 ease-in-out">
+            <span
+              className="text-black transform -translate-y-8 
+            group-hover:transform group-hover:translate-y-full duration-300 ease-in-out"
+            >
               Become a Client
             </span>
           </span>
           <span className="z-30">
-            <span className="ml-2 group-hover:text-white">
+            <span className="ml-2 group-hover:text-white ">
+              {/*  after:content-[''] after:bg-black after:rounded-full hover:after:w-72 hover:after:h-72  hover:bg-red-300 */}
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </span>
           </span>
