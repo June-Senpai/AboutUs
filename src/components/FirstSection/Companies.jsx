@@ -1,4 +1,35 @@
+"use client"
 import React from "react"
+import { motion } from "framer-motion"
+
+const CompanyList = (props) => {
+  return (
+    <div className="flex justify-center items-center border-2 border-gray-200 h-32 w32 p-8 shrink-0">
+      {props.Company.image}
+    </div>
+  )
+}
+
+const Companies = () => {
+  return (
+    <motion.div
+      className="flex"
+      animate={{ x: [0, -900, 0] }}
+      transition={{
+        duration: 10,
+        ease: "linear",
+        repeat: Infinity,
+      }}
+    >
+      {Company.map((Company, index) => (
+        <CompanyList key={"first" + index} Company={Company} />
+      ))}
+      {Company.map((Company, index) => (
+        <CompanyList key={"second" + index} Company={Company} />
+      ))}
+    </motion.div>
+  )
+}
 
 const Company = [
   {
@@ -50,26 +81,5 @@ const Company = [
     ),
   },
 ]
-
-const CompanyList = (props) => {
-  return (
-    <div className="border-2 border-gray-200 h-32 w32 p-8 inline-block shrink-0">
-      {props.Company.image}
-    </div>
-  )
-}
-
-const Companies = () => {
-  return (
-    <div className="border-t-2 border-gray-200 company flex ">
-      {Company.map((Company) => (
-        <CompanyList Company={Company} />
-      ))}
-      {Company.map((Company) => (
-        <CompanyList Company={Company} />
-      ))}
-    </div>
-  )
-}
 
 export default Companies

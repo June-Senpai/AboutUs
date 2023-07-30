@@ -24,7 +24,6 @@ const cardsInfo = [
 ]
 
 const Card = (props) => {
-  console.log(props)
   return (
     <div className=" rounded-2xl bg-cardBg relative overflow-hidden h-36 p-5">
       <h1 className="text-4xl font-bold">{props.cardInfo.heading}</h1>
@@ -45,8 +44,8 @@ const Cards = () => {
     <div className="mt-12 md:mx-auto">
       <h2 className="font-semibold text-gray-400">Some Number About Us</h2>
       <div className="grid grid-cols-2 gap-4 mt-4 w-178 md:place-content-center lg:w-[500px]">
-        {cardsInfo.map((cardInfo) => (
-          <Card cardInfo={cardInfo} />
+        {cardsInfo.map((cardInfo, index) => (
+          <Card key={index} cardInfo={cardInfo} />
         ))}
       </div>
     </div>
