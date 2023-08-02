@@ -28,12 +28,11 @@ const Texts = () => {
   return (
     <motion.div
       className="text-9xl text-gray-400 flex flex-row"
-      animate={animation}
+      animate={{ x: [0, -900, 0] }}
       transition={{
-        duration: 5,
+        duration: 10,
         ease: "linear",
         repeat: Infinity,
-        onRepeat: cycleAnimation,
       }}
     >
       {Text.map((Text, index) => (
