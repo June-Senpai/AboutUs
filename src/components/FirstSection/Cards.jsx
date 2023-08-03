@@ -28,7 +28,7 @@ const Card = (props) => {
     <div className=" rounded-2xl bg-cardBg relative overflow-hidden p-5 ">
       <h1 className="text-4xl font-bold">{props.cardInfo.heading}</h1>
       <div className=" flex  items-center">
-        <div className="w-40 text-sm text-gray-400 relative z-30 md:text-xl sm:w-full">
+        <div className="w-40 text-sm text-gray-400 relative z-30 md:text-xl sm:w-full ">
           {props.cardInfo.description}
         </div>
         <div className="absolute -bottom-5 -right-5">
@@ -43,7 +43,7 @@ const Cards = () => {
   return (
     <div className="mt-12 md:mx-auto">
       <h2 className="font-semibold text-gray-400">Some Number About Us</h2>
-      <div className="grid grid-cols-2 gap-1 mt-4 md:place-content-center lg:w-[500px]">
+      <div className="grid grid-cols-2 gap-1 mt-4 md:place-content-center lg:w-[500px] lg:gap-5">
         {cardsInfo.map((cardInfo, index) => (
           <Card key={index} cardInfo={cardInfo} />
         ))}
