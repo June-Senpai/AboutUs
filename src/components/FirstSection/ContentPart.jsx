@@ -23,11 +23,17 @@ const ContentPart = () => {
 
 const CircleComponent = ({ setText }) => {
   return (
-    <div className="justify-end items-end w-1/2 scale-75 ml-20 mb-10 hidden lg:flex">
+    <div className="justify-end items-end w-1/2 scale-75 ml-20 mb-10 hidden lg:flex xl:scale-105 lg:mt-6">
       <div
         className="w-178 h-178 min-w-178 bg-gray-100 rounded-full mr-2 relative "
         onMouseLeave={() => setText(INITIAL_TEXT)}
       >
+        <div className=" flex items-center justify-center top-[238px] left-[315px] absolute z-30 h-5 w-5 bg-blue-400 rounded-full "></div>
+        <div className=" flex items-center justify-center top-[230px] left-[308px] absolute opacity-40 z-10 h-9 w-9 bg-gray-400 rounded-full animate-pulse"></div>
+        <div className=" flex items-center justify-center top-[300px] left-[250px] absolute z-30 h-5 w-5 bg-blue-400 rounded-full "></div>
+        <div className=" flex items-center justify-center top-[292px] left-[242px] absolute opacity-5 z-10 h-9 w-9 bg-gray-50 rounded-full animate-pulse"></div>
+        <div className=" flex items-center justify-center top-[378px] left-[170px] absolute z-30 h-5 w-5 bg-blue-400 rounded-full "></div>
+        <div className=" flex items-center justify-center top-[370px] left-[162px] absolute opacity-5 z-10 h-9 w-9 bg-gray-500 rounded-full animate-pulse"></div>
         <div
           className="w-156 h-156 bg-gray-200 rounded-full mr-2 absolute right-[2.8125%] top-[2.8125%] "
           onMouseEnter={() => setText(SECOND_TEXT)}
@@ -54,7 +60,7 @@ const INITIAL_TEXT = (
   <>
     <span className="font-medium text-black">Solid Strategy</span> aligned with
     business needs and robust data analysis are fundamental ingredients to
-    extract actionable insights
+    extract actionable
   </>
 )
 const SECOND_TEXT = (
