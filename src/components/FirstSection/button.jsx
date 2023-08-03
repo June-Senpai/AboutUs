@@ -4,8 +4,8 @@ const Button = () => {
   return (
     <>
       <div className="group">
-        <button className="flex items-center px-7 py-3 bg-gray-200 rounded-full overflow-hidden font-medium text-base leading-6 font-sans text-gray-800 tracking-tighter group relative">
-          <span className="flex flex-col h-6 overflow-hidden relative z-30 text-lg">
+        <button className="flex items-center px-2 py-1 sm:px-3 sm:py-1  bg-gray-200 rounded-full overflow-hidden font-medium text-base leading-6 font-sans text-gray-800 tracking-tighter group relative">
+          <span className="flex flex-col h-6 overflow-hidden relative z-30 text-lg sm:text-xl ">
             <span className="text-white transform -translate-y-full group-hover:transform group-hover:-translate-y-1 duration-300 ease-in-out">
               Become a Client
             </span>

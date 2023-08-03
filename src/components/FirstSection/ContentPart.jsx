@@ -8,9 +8,9 @@ const ContentPart = () => {
 
   return (
     <>
-      <div className="flex justify-between mt-20">
+      <div className="flex justify-between mt-7">
         <div className="md:w-full">
-          <h1 className="text-xl w-1/2 text-gray-400 lg:text-2xl mt-4 md:text-2xl md:w-full sm:w-full">
+          <h1 className="text-xl text-gray-400 lg:text-2xl mt-4 md:text-2xl md:w-full sm:w-full">
             {text}
           </h1>
           <Cards />
@@ -23,7 +23,7 @@ const ContentPart = () => {
 
 const CircleComponent = ({ setText }) => {
   return (
-    <div className="flex justify-end items-end w-1/2 scale-75 ml-32 mb-10 ">
+    <div className="justify-end items-end w-1/2 scale-75 ml-20 mb-10 hidden lg:flex">
       <div
         className="w-178 h-178 min-w-178 bg-gray-100 rounded-full mr-2 relative "
         onMouseLeave={() => setText(INITIAL_TEXT)}

@@ -8,7 +8,7 @@ const Heading = () => {
         02 — About Us
       </h3>
       <div className="flex justify-between items-center mt-3">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium">
+        <h2 className="text-xs sm:text-2xl md:text-4xl lg:text-5xl font-medium">
           We Strive to Innovate
         </h2>
         <Button />

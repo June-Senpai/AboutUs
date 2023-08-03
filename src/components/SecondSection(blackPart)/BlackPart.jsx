@@ -13,8 +13,8 @@ const BlackPart = () => {
       </div>
       <Texts />
       <PhoneMoving />
-      <div className="flex flex-col md:flex-row justify-between items-center -mt-[390px] ">
-        <p className="text-xl m-3 text-center md:text-left">
+      <div className="flex flex-col md:flex-row justify-between items-center -mt-[500px] ">
+        <p className="text-base m-3 text-center md:text-left">
           Making your business outstanding is a science.
           <br />
           We take it (a) seriously and (b) creatively.
